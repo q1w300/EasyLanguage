@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Русский язык - EasyLanguage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Добавьте эти мета-теги -->
+    <meta name="theme-color" content="#4361ee">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Добавьте этот стиль для предотвращения выделения текста при касании -->
+    <style>
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        input, textarea, select {
+            -webkit-user-select: text;
+            user-select: text;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Easy<span>Language</span></a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#lessons">Занятия и цены</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
+                    <li><a href="#contact">Запись</a></li>
+                    <li class="language-switcher">
+                        <a href="english.html"><i class="fas fa-globe"></i> English</a>
+                        <a href="russian.html" class="active"><i class="fas fa-globe"></i> Русский</a>
+                        <a href="italian.html"><i class="fas fa-globe"></i> Italiano</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Русский язык как иностранный для жизни и работы</h1>
+            <p>Профессиональное обучение русскому языку для иностранцев. Подготовка к экзаменам ТРКИ, бизнес-русский, изучение культуры и традиций России с носителями языка.</p>
+            <a href="#contact" class="btn btn-accent">Записаться на пробный урок</a>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги по русскому языку</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Общий курс русского</h3>
+                    <p>Изучение русского с нуля или продолжение обучения для жизни, работы и учебы в России. Постановка произношения, грамматика, развитие разговорных навыков.</p>
+                    <ul class="service-list">
+                        <li>Обучение с любого уровня</li>
+                        <li>Постановка произношения</li>
+                        <li>Развитие всех языковых навыков</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Подготовка к ТРКИ</h3>
+                    <p>Целенаправленная подготовка к сертификационным экзаменам по русскому языку как иностранному. Разбираем структуру экзамена, тренируем все части.</p>
+                    <ul class="service-list">
+                        <li>Уровни А1-С2</li>
+                        <li>Тренировочные тесты</li>
+                        <li>Стратегии успешной сдачи</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Бизнес-русский</h3>
+                    <p>Русский язык для делового общения, переговоров, работы в российских компаниях. Учим профессиональную лексику и деловую переписку.</p>
+                    <ul class="service-list">
+                        <li>Деловая переписка</li>
+                        <li>Профессиональная лексика</li>
+                        <li>Подготовка к собеседованию</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Занятия и цены -->
+    <section id="lessons" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Занятия и цены по русскому</h2>
+            <p class="section-subtitle">Выберите формат, который подходит именно вам. Первый пробный урок - бесплатно!</p>
+            
+            <div class="pricing-grid">
+                <!-- Индивидуальные занятия -->
+                <div class="pricing-card popular">
+                    <div class="pricing-header">
+                        <h3>Индивидуальные занятия</h3>
+                        <div class="price">
+                            <span class="amount">1 500 ₽</span>
+                            <span class="period">/ 60 минут</span>
+                        </div>
+                        <p class="pricing-description">Персональный подход и максимальный результат</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Индивидуальная программа</li>
+                        <li><i class="fas fa-check"></i> Гибкий график занятий</li>
+                        <li><i class="fas fa-check"></i> Максимум внимания преподавателя</li>
+                        <li><i class="fas fa-check"></i> Корректировка под ваш темп</li>
+                        <li><i class="fas fa-check"></i> Личный кабинет с материалами</li>
+                        <li><i class="fas fa-check"></i> Поддержка между занятиями</li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <p><i class="far fa-clock"></i> <strong>Длительность:</strong> 60 или 90 минут</p>
+                        <p><i class="fas fa-calendar"></i> <strong>Рекомендуем:</strong> 2-3 раза в неделю</p>
+                        <a href="#contact" class="btn btn-accent">Выбрать этот формат</a>
+                    </div>
+                </div>
+                
+                <!-- Занятия в мини-группе -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Мини-группа (2-3 человека)</h3>
+                        <div class="price">
+                            <span class="amount">900 ₽</span>
+                            <span class="period">/ 60 минут с человека</span>
+                        </div>
+                        <p class="pricing-description">Экономия + мотивация от других учеников</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Группа с одинаковым уровнем</li>
+                        <li><i class="fas fa-check"></i> Интерактивные задания в паре/тройке</li>
+                        <li><i class="fas fa-check"></i> Практика общения с разными людьми</li>
+                        <li><i class="fas fa-check"></i> Экономия 40% от индивидуальных занятий</li>
+                        <li><i class="fas fa-check"></i> Регулярный график занятий</li>
+                        <li><i class="fas fa-check"></i> Групповые проекты и обсуждения</li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <p><i class="far fa-clock"></i> <strong>Длительность:</strong> 60 или 90 минут</p>
+                        <p><i class="fas fa-calendar"></i> <strong>Расписание:</strong> Фиксированные дни и время</p>
+                        <a href="#contact" class="btn">Выбрать этот формат</a>
+                    </div>
+                    
+                    <div class="group-note">
+                        <p><i class="fas fa-users"></i> <strong>Приведи друга и получи скидку 10%!</strong></p>
+                    </div>
+                </div>
+                
+                <!-- Занятия в группе -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Групповые занятия (4-6 человек)</h3>
+                        <div class="price">
+                            <span class="amount">700 ₽</span>
+                            <span class="period">/ 60 минут с человека</span>
+                        </div>
+                        <p class="pricing-description">Идеально для начинающих и студентов</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Максимальная экономия</li>
+                        <li><i class="fas fa-check"></i> Разнообразные групповые активности</li>
+                        <li><i class="fas fa-check"></i> Игровая форма обучения</li>
+                        <li><i class="fas fa-check"></i> Регулярные разговорные клубы</li>
+                        <li><i class="fas fa-check"></i> Подготовленные учебные материалы</li>
+                        <li><i class="fas fa-check"></i> Промежуточные тесты и отчеты</li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <p><i class="far fa-clock"></i> <strong>Длительность:</strong> 60 минут</p>
+                        <p><i class="fas fa-calendar"></i> <strong>Расписание:</strong> 1-2 раза в неделю</p>
+                        <a href="#contact" class="btn">Выбрать этот формат</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительная информация -->
+            <div class="pricing-info">
+                <div class="info-card">
+                    <i class="fas fa-gift"></i>
+                    <h4>Пробный урок бесплатно</h4>
+                    <p>20-минутное знакомство, определение уровня и подбор программы</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-percent"></i>
+                    <h4>Скидки при оплате пакетов</h4>
+                    <p>При оплате 8 занятий сразу - скидка 5%, 16 занятий - скидка 10%</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h4>Скидка для студентов</h4>
+                    <p>Студентам очных отделений - скидка 15% на все форматы обучения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преподаватели -->
+    <section id="teachers" class="about">
+        <div class="container">
+            <h2 class="section-title">Наши преподаватели русского</h2>
+            
+            <div class="teachers">
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <img src="anna.jpg" alt="Анна - преподаватель русского языка">
+                    </div>
+                    <h3>Анна</h3>
+                    <p class="teacher-specialty">Специализация: ТРКИ, общий курс</p>
+                    <p class="teacher-experience">Опыт: 5 лет</p>
+                    
+                    <div class="teacher-popup">
+                        <h4>Подробнее об Анне</h4>
+                        <p>Сертифицированный преподаватель русского языка как иностранного. Специализируется на подготовке к экзаменам ТРКИ и общем курсе русского. Имеет международный сертификат преподавателя РКИ.</p>
+                        <ul>
+                            <li>Окончила филологический факультет МГУ</li>
+                            <li>Сертификат преподавателя РКИ</li>
+                            <li>Опыт работы с учениками из 15 стран</li>
+                            <li>Автор методики "Русский через культуру"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <img src="lorenzo.jpg" alt="Лоренцо - преподаватель русского языка">
+                    </div>
+                    <h3>Лоренцо</h3>
+                    <p class="teacher-specialty">Специализация: бизнес-русский</p>
+                    <p class="teacher-experience">Опыт: 4 года</p>
+                    
+                    <div class="teacher-popup">
+                        <h4>Подробнее о Лоренцо</h4>
+                        <p>Носитель русского языка с международным опытом. Специализируется на бизнес-русском и подготовке к работе в российских компаниях. Помог более 40 иностранцам адаптироваться к работе в России.</p>
+                        <ul>
+                            <li>Образование: экономический факультет</li>
+                            <li>Опыт работы в международных компаниях</li>
+                            <li>Автор курса "Бизнес-русский для экспатов"</li>
+                            <li>Свободно говорит на 3 языках</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и запись -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Запись на занятие по русскому</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (985) 125-67-06</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>annabell.khl@yandex.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Telegram: @manyynka</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00-20:00, Сб: 10:00-16:00</span>
+                    </div>
+                    <p class="contact-note">Первый пробный урок (20 минут) — бесплатно!</p>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact">Телефон или Email *</label>
+                            <input type="text" id="contact" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goal">Цель занятий *</label>
+                            <select id="goal" class="form-control" required>
+                                <option value="" disabled selected>Выберите цель</option>
+                                <option value="general">Общий курс русского</option>
+                                <option value="trki">Подготовка к ТРКИ</option>
+                                <option value="business">Бизнес-русский</option>
+                                <option value="culture">Русская культура и традиции</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="format">Формат занятий *</label>
+                            <select id="format" class="form-control" required>
+                                <option value="" disabled selected>Выберите формат</option>
+                                <option value="individual">Индивидуальные (1500₽/60 мин)</option>
+                                <option value="mini-group">Мини-группа (900₽/60 мин)</option>
+                                <option value="group">Групповые (700₽/60 мин)</option>
+                                <option value="not-sure">Пока не знаю, нужна консультация</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Дополнительная информация</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Ваш текущий уровень русского, родной язык, пожелания по времени занятий и т.д."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">Easy<span>Language</span></a>
+                    <p>Профессиональное обучение русскому языку как иностранному в Москве.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Другие языки</h4>
+                    <ul class="footer-links">
+                        <li><a href="english.html">Английский язык</a></li>
+                        <li><a href="italian.html">Итальянский язык</a></li>
+                        <li><a href="index.html">Все языки</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +7 (985) 125-67-06</li>
+                        <li><i class="fas fa-envelope"></i> annabell.khl@yandex.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Образцова, 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="currentYear">2024</span> EasyLanguage. Русский язык как иностранный для жизни и работы в России.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

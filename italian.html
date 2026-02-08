@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итальянский язык - EasyLanguage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Добавьте эти мета-теги -->
+    <meta name="theme-color" content="#4361ee">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Добавьте этот стиль для предотвращения выделения текста при касании -->
+    <style>
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        input, textarea, select {
+            -webkit-user-select: text;
+            user-select: text;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Easy<span>Language</span></a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#lessons">Занятия и цены</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
+                    <li><a href="#contact">Запись</a></li>
+                    <li class="language-switcher">
+                        <a href="english.html"><i class="fas fa-globe"></i> English</a>
+                        <a href="russian.html"><i class="fas fa-globe"></i> Русский</a>
+                        <a href="italian.html" class="active"><i class="fas fa-globe"></i> Italiano</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Итальянский язык с носителем для путешествий и работы</h1>
+            <p>Изучение итальянского языка с носителем. Культура Италии, искусство, кухня, подготовка к экзаменам CILS/CELI и итальянский для бизнеса.</p>
+            <a href="#contact" class="btn btn-accent">Записаться на пробный урок</a>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги по итальянскому</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Итальянский для путешествий</h3>
+                    <p>Базовый итальянский для поездок в Италию: общение в отеле, ресторане, магазинах, музеях. Учим нужные фразы и правильное произношение.</p>
+                    <ul class="service-list">
+                        <li>Разговорные навыки для туристов</li>
+                        <li>Итальянская культура и этикет</li>
+                        <li>Практика реальных ситуаций</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Подготовка к CILS/CELI</h3>
+                    <p>Подготовка к международным экзаменам по итальянскому языку. Разбираем все части экзамена, учим стратегии выполнения заданий.</p>
+                    <ul class="service-list">
+                        <li>Уровни A1-C2</li>
+                        <li>Тренировочные тесты</li>
+                        <li>Стратегии успешной сдачи</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Культура и искусство Италии</h3>
+                    <p>Изучение языка через искусство, музыку, кино, литературу и традиции Италии. Совмещаем изучение языка с погружением в культуру.</p>
+                    <ul class="service-list">
+                        <li>Итальянское кино и литература</li>
+                        <li>Музыка и опера</li>
+                        <li>Кулинарные традиции</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Занятия и цены -->
+    <section id="lessons" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Занятия и цены по итальянскому</h2>
+            <p class="section-subtitle">Выберите формат, который подходит именно вам. Первый пробный урок - бесплатно!</p>
+            
+            <div class="pricing-grid">
+                <!-- Индивидуальные занятия -->
+                <div class="pricing-card popular">
+                    <div class="pricing-header">
+                        <h3>Индивидуальные занятия</h3>
+                        <div class="price">
+                            <span class="amount">1 400 ₽</span>
+                            <span class="period">/ 60 минут</span>
+                        </div>
+                        <p class="pricing-description">С носителем языка Лоренцо</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Индивидуальная программа</li>
+                        <li><i class="fas fa-check"></i> Гибкий график занятий</li>
+                        <li><i class="fas fa-check"></i> Аутентичное произношение</li>
+                        <li><i class="fas fa-check"></i> Корректировка под ваш темп</li>
+                        <li><i class="fas fa-check"></i> Культурные аспекты Италии</li>
+                        <li><i class="fas fa-check"></i> Поддержка между занятиями</li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <p><i class="far fa-clock"></i> <strong>Длительность:</strong> 60 или 90 минут</p>
+                        <p><i class="fas fa-calendar"></i> <strong>Рекомендуем:</strong> 2-3 раза в неделю</p>
+                        <a href="#contact" class="btn btn-accent">Выбрать этот формат</a>
+                    </div>
+                </div>
+                
+                <!-- Занятия в мини-группе -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Мини-группа (2-3 человека)</h3>
+                        <div class="price">
+                            <span class="amount">850 ₽</span>
+                            <span class="period">/ 60 минут с человека</span>
+                        </div>
+                        <p class="pricing-description">Экономия + практика общения</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Группа с одинаковым уровнем</li>
+                        <li><i class="fas fa-check"></i> Интерактивные задания в паре/тройке</li>
+                        <li><i class="fas fa-check"></i> Практика общения с разными людьми</li>
+                        <li><i class="fas fa-check"></i> Экономия 40% от индивидуальных занятий</li>
+                        <li><i class="fas fa-check"></i> Регулярный график занятий</li>
+                        <li><i class="fas fa-check"></i> Групповые проекты и обсуждения</li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <p><i class="far fa-clock"></i> <strong>Длительность:</strong> 60 или 90 минут</p>
+                        <p><i class="fas fa-calendar"></i> <strong>Расписание:</strong> Фиксированные дни и время</p>
+                        <a href="#contact" class="btn">Выбрать этот формат</a>
+                    </div>
+                    
+                    <div class="group-note">
+                        <p><i class="fas fa-users"></i> <strong>Приведи друга и получи скидку 10%!</strong></p>
+                    </div>
+                </div>
+                
+                <!-- Занятия в группе -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Групповые занятия (4-6 человек)</h3>
+                        <div class="price">
+                            <span class="amount">650 ₽</span>
+                            <span class="period">/ 60 минут с человека</span>
+                        </div>
+                        <p class="pricing-description">Идеально для начинающих</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Максимальная экономия</li>
+                        <li><i class="fas fa-check"></i> Разнообразные групповые активности</li>
+                        <li><i class="fas fa-check"></i> Игровая форма обучения</li>
+                        <li><i class="fas fa-check"></i> Регулярные разговорные клубы</li>
+                        <li><i class="fas fa-check"></i> Подготовленные учебные материалы</li>
+                        <li><i class="fas fa-check"></i> Промежуточные тесты и отчеты</li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <p><i class="far fa-clock"></i> <strong>Длительность:</strong> 60 минут</p>
+                        <p><i class="fas fa-calendar"></i> <strong>Расписание:</strong> 1-2 раза в неделю</p>
+                        <a href="#contact" class="btn">Выбрать этот формат</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительная информация -->
+            <div class="pricing-info">
+                <div class="info-card">
+                    <i class="fas fa-gift"></i>
+                    <h4>Пробный урок бесплатно</h4>
+                    <p>20-минутное знакомство, определение уровня и подбор программы</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-percent"></i>
+                    <h4>Скидки при оплате пакетов</h4>
+                    <p>При оплате 8 занятий сразу - скидка 5%, 16 занятий - скидка 10%</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h4>Скидка для пар</h4>
+                    <p>Если вы приходите заниматься вдвоем (пара/друзья) - скидка 20% каждому</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преподаватели -->
+    <section id="teachers" class="about">
+        <div class="container">
+            <h2 class="section-title">Наши преподаватели итальянского</h2>
+            
+            <div class="teachers">
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <img src="lorenzo.jpg" alt="Лоренцо - преподаватель итальянского языка">
+                    </div>
+                    <h3>Лоренцо</h3>
+                    <p class="teacher-specialty">Носитель языка, специализация: CILS/CELI</p>
+                    <p class="teacher-experience">Опыт: 4 года</p>
+                    
+                    <div class="teacher-popup">
+                        <h4>Подробнее о Лоренцо</h4>
+                        <p>Носитель итальянского языка из Милана. Специализируется на подготовке к экзаменам CILS/CELI и итальянском для путешествий. Имеет сертификат преподавателя итальянского как иностранного.</p>
+                        <ul>
+                            <li>Родной язык: итальянский</li>
+                            <li>Сертификат DITALS (преподавание итальянского)</li>
+                            <li>Опыт работы в языковых школах Италии и России</li>
+                            <li>Автор курса "Итальянский через искусство"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <img src="anna.jpg" alt="Анна - преподаватель итальянского языка">
+                    </div>
+                    <h3>Анна</h3>
+                    <p class="teacher-specialty">Специализация: культура, для начинающих</p>
+                    <p class="teacher-experience">Опыт: 5 лет</p>
+                    
+                    <div class="teacher-popup">
+                        <h4>Подробнее об Анне</h4>
+                        <p>Сертифицированный преподаватель итальянского языка. Специализируется на преподавании для начинающих и изучении итальянского через культуру. Жила и работала в Италии 3 года.</p>
+                        <ul>
+                            <li>Образование: романо-германская филология</li>
+                            <li>Стажировка в университете Перуджи</li>
+                            <li>Сертификат CILS C1</li>
+                            <li>Автор методики "Итальянский с нуля"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и запись -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Запись на занятие по итальянскому</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (985) 125-67-06</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>annabell.khl@yandex.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Telegram: @manyynka</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00-20:00, Сб: 10:00-16:00</span>
+                    </div>
+                    <p class="contact-note">Первый пробный урок (20 минут) — бесплатно!</p>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact">Телефон или Email *</label>
+                            <input type="text" id="contact" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goal">Цель занятий *</label>
+                            <select id="goal" class="form-control" required>
+                                <option value="" disabled selected>Выберите цель</option>
+                                <option value="travel">Итальянский для путешествий</option>
+                                <option value="cils">Подготовка к CILS/CELI</option>
+                                <option value="culture">Культура и искусство Италии</option>
+                                <option value="beginner">Итальянский с нуля</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="format">Формат занятий *</label>
+                            <select id="format" class="form-control" required>
+                                <option value="" disabled selected>Выберите формат</option>
+                                <option value="individual">Индивидуальные (1400₽/60 мин)</option>
+                                <option value="mini-group">Мини-группа (850₽/60 мин)</option>
+                                <option value="group">Групповые (650₽/60 мин)</option>
+                                <option value="not-sure">Пока не знаю, нужна консультация</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Дополнительная информация</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Ваш текущий уровень итальянского, пожелания по времени занятий, интерес к конкретным аспектам культуры и т.д."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">Easy<span>Language</span></a>
+                    <p>Профессиональное обучение итальянскому языку с носителем в Москве.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Другие языки</h4>
+                    <ul class="footer-links">
+                        <li><a href="english.html">Английский язык</a></li>
+                        <li><a href="russian.html">Русский язык</a></li>
+                        <li><a href="index.html">Все языки</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +7 (985) 125-67-06</li>
+                        <li><i class="fas fa-envelope"></i> annabell.khl@yandex.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Образцова, 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="currentYear">2024</span> EasyLanguage. Итальянский язык с носителем для путешествий, работы и изучения культуры.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLanguage - Языковые курсы в Москве</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Добавьте эти мета-теги -->
+    <meta name="theme-color" content="#4361ee">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Добавьте этот стиль для предотвращения выделения текста при касании -->
+    <style>
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        input, textarea, select {
+            -webkit-user-select: text;
+            user-select: text;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Easy<span>Language</span></a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#languages">Языки</a></li>
+                    <li><a href="#methodology">Методика</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li class="language-switcher">
+                        <a href="english.html"><i class="fas fa-globe"></i> English</a>
+                        <a href="russian.html"><i class="fas fa-globe"></i> Русский</a>
+                        <a href="italian.html"><i class="fas fa-globe"></i> Italiano</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Языковая школа EasyLanguage в Москве</h1>
+            <p>Профессиональное обучение английскому, русскому и итальянскому языкам для детей и взрослых. Индивидуальный подход, современные методики и гарантированный результат.</p>
+            <div class="hero-buttons">
+                <a href="#languages" class="btn btn-accent">Выбрать язык</a>
+                <a href="#contact" class="btn">Записаться на пробный урок</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">О нашей школе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Easy<span>Language</span> – команда профессиональных преподавателей</h2>
+                    <p>Мы работаем в Москве с 2018 года и помогли более 300 ученикам достичь своих языковых целей. Наша школа объединяет опытных преподавателей, которые сами прошли путь изучения языков и знают, как сделать процесс эффективным и интересным.</p>
+                    <p>Мы не просто учим правилам — мы учим использовать язык в реальной жизни: для общения, работы, учебы и путешествий.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-text">учеников</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-text">лет опыта</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">96%</span>
+                            <span class="stat-text">результативность</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="vmeste.jpg" alt="Наша команда EasyLanguage" class="online-lessons-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Языки -->
+    <section id="languages" class="languages-section">
+        <div class="container">
+            <h2 class="section-title">Выберите язык</h2>
+            <p class="section-subtitle">Мы предлагаем профессиональное обучение трем языкам с разными целями и программами</p>
+            
+            <div class="languages-grid">
+                <!-- Английский -->
+                <div class="language-card">
+                    <div class="language-icon">
+                        <i class="fas fa-flag-usa"></i>
+                    </div>
+                    <h3>Английский язык</h3>
+                    <p>Самый востребованный язык для общения, работы и путешествий по всему миру</p>
+                    <ul class="language-features">
+                        <li><i class="fas fa-check"></i> Подготовка к ОГЭ/ЕГЭ</li>
+                        <li><i class="fas fa-check"></i> Английский для путешествий</li>
+                        <li><i class="fas fa-check"></i> Разговорный английский</li>
+                        <li><i class="fas fa-check"></i> Бизнес-английский</li>
+                    </ul>
+                    <a href="english.html" class="btn">Подробнее об английском</a>
+                </div>
+                
+                <!-- Русский -->
+                <div class="language-card">
+                    <div class="language-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Русский язык</h3>
+                    <p>Изучение русского как иностранного для жизни, работы и учебы в России</p>
+                    <ul class="language-features">
+                        <li><i class="fas fa-check"></i> Русский для иностранцев</li>
+                        <li><i class="fas fa-check"></i> Подготовка к экзаменам ТРКИ</li>
+                        <li><i class="fas fa-check"></i> Бизнес-русский</li>
+                        <li><i class="fas fa-check"></i> Культура и традиции</li>
+                    </ul>
+                    <a href="russian.html" class="btn">Подробнее о русском</a>
+                </div>
+                
+                <!-- Итальянский -->
+                <div class="language-card">
+                    <div class="language-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Итальянский язык</h3>
+                    <p>Язык искусства, культуры и прекрасной кухни для путешествий и работы</p>
+                    <ul class="language-features">
+                        <li><i class="fas fa-check"></i> Итальянский для путешествий</li>
+                        <li><i class="fas fa-check"></i> Культура и искусство Италии</li>
+                        <li><i class="fas fa-check"></i> Бизнес-итальянский</li>
+                        <li><i class="fas fa-check"></i> Подготовка к CILS/CELI</li>
+                    </ul>
+                    <a href="italian.html" class="btn">Подробнее об итальянском</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Профессиональные преподаватели</h3>
+                    <p>Все наши преподаватели имеют высшее образование, сертификаты и опыт работы от 4 лет</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Программа адаптируется под ваши цели, уровень знаний и темп обучения</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Разговорная практика</h3>
+                    <p>80% занятия — это практика общения, а не скучная теория</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Гибкий график</h3>
+                    <p>Занятия в удобное время: утром, днем, вечером, в будни или выходные</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Методика -->
+    <section id="methodology">
+        <div class="container">
+            <h2 class="section-title">Наша методика</h2>
+            <div class="methodology-item">
+                <h3>Коммуникативный подход</h3>
+                <p>Мы учим не просто правилам, а умению общаться. С первого занятия вы начинаете говорить на изучаемом языке, даже если начинаете с нуля.</p>
+            </div>
+            
+            <div class="methodology-item">
+                <h3>Адаптивная программа</h3>
+                <p>Для каждого ученика составляем индивидуальную программу, исходя из его целей, интересов и уровня подготовки.</p>
+            </div>
+            
+            <div class="methodology-item">
+                <h3>Прозрачность и честность</h3>
+                <p>Четко обозначаем цели, сроки и стоимость обучения. Регулярно оцениваем прогресс и даем рекомендации.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Запись на пробный урок</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Москва, ул. Образцова, 15</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (985) 125-67-06</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>annabell.khl@yandex.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Telegram: @manyynka</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00-20:00, Сб: 10:00-16:00</span>
+                    </div>
+                    <p class="contact-note">Пробный урок (20 минут) — бесплатно!</p>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact">Телефон или Email *</label>
+                            <input type="text" id="contact" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="language">Язык *</label>
+                            <select id="language" class="form-control" required>
+                                <option value="" disabled selected>Выберите язык</option>
+                                <option value="english">Английский</option>
+                                <option value="russian">Русский</option>
+                                <option value="italian">Итальянский</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goal">Цель занятий</label>
+                            <textarea id="goal" class="form-control" rows="3" placeholder="Например: подготовка к экзамену, для путешествий, для работы..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">Easy<span>Language</span></a>
+                    <p>Языковая школа в Москве. Профессиональное обучение английскому, русскому и итальянскому языкам.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Языки</h4>
+                    <ul class="footer-links">
+                        <li><a href="english.html">Английский язык</a></li>
+                        <li><a href="russian.html">Русский язык</a></li>
+                        <li><a href="italian.html">Итальянский язык</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#languages">Языки</a></li>
+                        <li><a href="#methodology">Методика</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +7 (985) 125-67-06</li>
+                        <li><i class="fas fa-envelope"></i> annabell.khl@yandex.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Образцова, 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="currentYear">2024</span> EasyLanguage. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
